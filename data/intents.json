@@ -1,0 +1,29 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["hello", "hi", "hey"],
+      "responses": [{"type": "text", "content": "Hi there! How can I help you today?"}]
+    },
+    {
+      "tag": "summarize",
+      "patterns": ["Summarize this", "Outline the key points", "Give a short overview"],
+      "responses": [{"type": "text", "content": "Sure, here's a quick summary:"}]
+    },
+    {
+      "tag": "explain",
+      "patterns": ["Explain this", "Describe in detail", "Can you elaborate?"],
+      "responses": [{"type": "text", "content": "Let me explain it step by step:"}]
+    },
+    {
+      "tag": "evaluate",
+      "patterns": ["Evaluate this", "Assess this", "What's your opinion?"],
+      "responses": [{"type": "text", "content": "Here's my evaluation:"}]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["bye", "goodbye", "see you"],
+      "responses": [{"type": "text", "content": "Goodbye! Talk soon."}]
+    }
+  ] 
+}

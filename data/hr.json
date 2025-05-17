@@ -1,0 +1,42 @@
+[
+  {
+    "question": "Tell me about yourself.",
+    "answer": "I am Yash Vishwas, an AI/ML enthusiast with a strong foundation in Python, TensorFlow, PyTorch, and data science. I have developed several personal projects, including a chatbot that performs dataset search, web search, image text extraction, and screen sharing with real-time transcription and response. I am passionate about solving real-world problems using machine learning."
+  },
+  {
+    "question": "What are your strengths?",
+    "answer": "My strengths include being a fast learner, problem solver, and having strong technical skills in machine learning and software development. I\u2019m also very good at building end-to-end systems, from data preprocessing to model deployment."
+  },
+  {
+    "question": "What are your weaknesses?",
+    "answer": "One of my weaknesses is that I sometimes spend too much time optimizing code, even when it\u2019s already working well. However, I\u2019ve learned to balance perfection with practicality and focus more on delivering results efficiently."
+  },
+  {
+    "question": "Why do you want to work at Human Resocia?",
+    "answer": "I am interested in Human Resocia because of its focus on connecting global engineering talent with cutting-edge opportunities in Japan. I want to contribute to meaningful AI/ML projects and grow professionally in an international and innovative environment."
+  },
+  {
+    "question": "What are your career goals?",
+    "answer": "My career goal is to become a lead AI/ML engineer, contributing to impactful projects and continuously learning new technologies. I want to build intelligent systems that make life easier and more efficient for people."
+  },
+  {
+    "question": "Can you work under pressure?",
+    "answer": "Yes, I can work under pressure. I stay calm and focus on breaking down the task into manageable parts. I\u2019ve handled project deadlines and last-minute changes effectively in the past."
+  },
+  {
+    "question": "How do you handle feedback?",
+    "answer": "I welcome feedback because it helps me improve. I listen carefully, analyze it objectively, and make the necessary adjustments to my work."
+  },
+  {
+    "question": "Describe a challenge you\u2019ve faced and how you overcame it.",
+    "answer": "One challenge I faced was integrating real-time audio transcription into my chatbot while preserving performance. I overcame it by researching streaming transcription libraries and optimizing the pipeline using multithreading and Vosk with FFmpeg."
+  },
+  {
+    "question": "What makes you a good fit for this role?",
+    "answer": "I am a good fit because I have hands-on experience building AI/ML applications, strong problem-solving skills, and a passion for learning. My personal projects reflect my ability to innovate and work independently."
+  },
+  {
+    "question": "Do you have experience working in teams?",
+    "answer": "Yes, I have collaborated with others during my academic projects and at work. I believe in clear communication, shared responsibilities, and supporting teammates to achieve common goals."
+  }
+]

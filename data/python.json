@@ -1,0 +1,699 @@
+{
+    "intents":
+  [
+  {
+    "tag": "data_types",
+    "patterns": [
+      "What are the data types in Python?",
+      "Explain different data types in Python.",
+      "List basic Python data types like int, float, str, bool.",
+      "Describe int, float, str, and bool in Python."
+    ],
+    "responses": [
+      "Python has several built-in data types:\n\n- `int`: Represents whole numbers, e.g., 5, -10, 0\n- `float`: Represents decimal numbers, e.g., 3.14, -2.7\n- `str`: Represents text or characters, enclosed in quotes, e.g., 'hello', \"Python\"\n- `bool`: Represents boolean values: True or False, often used in conditions and logical operations"
+    ]
+  },
+  {
+    "tag": "variables_constants",
+    "patterns": [
+      "What are variables and constants in Python?",
+      "How do you declare a variable in Python?",
+      "Does Python have constants like other languages?",
+      "Explain the difference between variables and constants in Python."
+    ],
+    "responses": [
+      "In Python:\n- Variables are containers for storing data values. You declare them using the assignment operator (=), e.g., `x = 10`.\n- Constants are not built-in, but by naming convention, variables in all caps (e.g., `PI = 3.14`) are treated as constants and should not be changed."
+    ]
+  },
+  {
+    "tag": "operators",
+    "patterns": [
+      "What are different operators in Python?",
+      "Explain arithmetic and logical operators in Python.",
+      "Tell me about comparison and bitwise operators in Python.",
+      "List and explain Python operators."
+    ],
+    "responses": [
+      "Python supports several operators:\n- **Arithmetic**: `+`, `-`, `*`, `/`, `//` (floor division), `%` (modulus), `**` (power)\n- **Comparison**: `==`, `!=`, `<`, `>`, `<=`, `>=`\n- **Logical**: `and`, `or`, `not`\n- **Bitwise**: `&`, `|`, `^`, `~`, `<<`, `>>`\nThese operators are used for performing calculations, comparisons, logic checks, and bit-level operations."
+    ]
+  },
+  {
+    "tag": "input_output",
+    "patterns": [
+      "How do you take input in Python?",
+      "How to print output in Python?",
+      "Explain input and output functions in Python.",
+      "What functions are used for I/O in Python?"
+    ],
+    "responses": [
+      "Python uses:\n- `input()` function to take user input as a string. Example: `name = input(\"Enter your name: \")`\n- `print()` function to display output. Example: `print(\"Hello World\")`"
+    ]
+  },
+  {
+    "tag": "type_casting",
+    "patterns": [
+      "What is type casting in Python?",
+      "How do you convert data types in Python?",
+      "Explain how to change one data type to another in Python.",
+      "Give examples of type casting in Python."
+    ],
+    "responses": [
+      "Type casting means converting one data type into another. Python provides built-in functions:\n- `int()`: Converts to integer\n- `float()`: Converts to float\n- `str()`: Converts to string\n- `bool()`: Converts to boolean\nExample: `int(\"10\")` converts string '10' to integer 10."
+    ]
+  },
+  {
+    "tag": "if_elif_else",
+    "patterns": [
+      "What are if, elif, and else statements in Python?",
+      "Explain control flow using if, elif, and else.",
+      "How does conditional execution work in Python?",
+      "Describe how to use if, elif, else."
+    ],
+    "responses": [
+      "`if`, `elif`, and `else` are used to control the flow of execution based on conditions:\n\n```python\nx = 10\nif x > 0:\n    print(\"Positive\")\nelif x == 0:\n    print(\"Zero\")\nelse:\n    print(\"Negative\")\n```\n- `if` checks the initial condition\n- `elif` (else-if) checks additional conditions\n- `else` runs if none of the above conditions are true"
+    ]
+  },
+  {
+    "tag": "loops",
+    "patterns": [
+      "How do loops work in Python?",
+      "Explain for and while loops in Python.",
+      "What are the different types of loops?",
+      "Give examples of for and while loops."
+    ],
+    "responses": [
+      "Python supports two main types of loops:\n\n- `for` loop is used to iterate over a sequence:\n```python\nfor i in range(5):\n    print(i)\n```\n\n- `while` loop continues as long as a condition is true:\n```python\ncount = 0\nwhile count < 5:\n    print(count)\n    count += 1\n```"
+    ]
+  },
+  {
+    "tag": "loop_control",
+    "patterns": [
+      "What are break, continue, and pass in Python?",
+      "Explain loop control statements.",
+      "How to skip or exit loops in Python?",
+      "What is the use of pass statement?"
+    ],
+    "responses": [
+      "Loop control statements in Python:\n\n- `break`: Exits the loop early\n- `continue`: Skips the current iteration and moves to the next\n- `pass`: Does nothing, used as a placeholder\n\nExample:\n```python\nfor i in range(5):\n    if i == 3:\n        continue\n    print(i)\n```"
+    ]
+  },
+  {
+    "tag": "list_comprehensions",
+    "patterns": [
+      "What are list comprehensions in Python?",
+      "Explain how to use list comprehensions.",
+      "How to write compact for loops in Python?",
+      "Give an example of a list comprehension."
+    ],
+    "responses": [
+      "List comprehensions provide a concise way to create lists:\n```python\nsquares = [x*x for x in range(5)]\nprint(squares)  # Output: [0, 1, 4, 9, 16]\n```\nIt’s a shorter syntax for creating a new list by applying an expression to each item in an iterable."
+    ]
+  },
+  {
+    "tag": "lists",
+    "patterns": [
+      "What are lists in Python?",
+      "Explain list indexing and slicing.",
+      "What are common list methods in Python?",
+      "How to use append, extend, and remove in lists?"
+    ],
+    "responses": [
+      "Lists in Python are ordered, mutable collections:\n\n- **Indexing**: `my_list[0]` accesses the first element.\n- **Slicing**: `my_list[1:4]` gets elements from index 1 to 3.\n\nCommon methods:\n```python\nmy_list = [1, 2, 3]\nmy_list.append(4)      # Adds 4\nmy_list.extend([5, 6]) # Adds multiple elements\nmy_list.remove(2)      # Removes 2\nprint(my_list)         # Output: [1, 3, 4, 5, 6]\n```"
+    ]
+  },
+  {
+    "tag": "tuples",
+    "patterns": [
+      "What are tuples in Python?",
+      "How are tuples different from lists?",
+      "Explain packing and unpacking with tuples.",
+      "Why use tuples in Python?"
+    ],
+    "responses": [
+      "Tuples are ordered, immutable collections:\n\n- Once created, values can’t be changed.\n- Useful for fixed data.\n\n**Packing and unpacking:**\n```python\ntuple1 = (1, 2, 3)             # Packing\na, b, c = tuple1               # Unpacking\nprint(a, b, c)                 # Output: 1 2 3\n```"
+    ]
+  },
+  {
+    "tag": "dictionaries",
+    "patterns": [
+      "What are dictionaries in Python?",
+      "How to use key-value pairs in Python?",
+      "What are common dictionary methods?",
+      "Explain get, keys, and items methods in dictionaries."
+    ],
+    "responses": [
+      "Dictionaries store data as key-value pairs:\n```python\nmy_dict = {'name': 'Alice', 'age': 25}\n```\n\nCommon methods:\n```python\nmy_dict.get('name')    # 'Alice'\nmy_dict.keys()         # dict_keys(['name', 'age'])\nmy_dict.items()        # dict_items([('name', 'Alice'), ('age', 25)])\n```"
+    ]
+  },
+  {
+    "tag": "sets",
+    "patterns": [
+      "What are sets in Python?",
+      "Explain the uniqueness property of sets.",
+      "What are set operations in Python?",
+      "How to use union, intersection, difference with sets?"
+    ],
+    "responses": [
+      "Sets are unordered collections of unique elements:\n```python\nmy_set = {1, 2, 3, 2}  # {1, 2, 3}\n```\n\nCommon operations:\n```python\nA = {1, 2, 3}\nB = {2, 3, 4}\nprint(A.union(B))        # {1, 2, 3, 4}\nprint(A.intersection(B)) # {2, 3}\nprint(A.difference(B))   # {1}\n```"
+    ]
+  },
+  {
+    "tag": "strings",
+    "patterns": [
+      "What are strings in Python?",
+      "Are strings mutable in Python?",
+      "What are common string methods?",
+      "Give examples of string manipulation in Python."
+    ],
+    "responses": [
+      "Strings are immutable sequences of characters:\n```python\nmy_str = \"Hello\"\n```\n\nCommon methods:\n```python\nprint(my_str.lower())       # 'hello'\nprint(my_str.upper())       # 'HELLO'\nprint(my_str.replace('e','a'))  # 'Hallo'\nprint(my_str[1:4])          # 'ell'\n```"
+    ]
+  },
+  {
+    "tag": "defining_functions",
+    "patterns": [
+      "How do you define a function in Python?",
+      "What is the syntax for creating functions in Python?",
+      "Give an example of a function in Python."
+    ],
+    "responses": [
+      "Functions in Python are defined using the `def` keyword:\n```python\ndef greet(name):\n    return f\"Hello, {name}!\"\n\nprint(greet(\"Alice\"))  # Output: Hello, Alice!\n```"
+    ]
+  },
+  {
+    "tag": "function_arguments",
+    "patterns": [
+      "What are different types of function arguments in Python?",
+      "Explain positional, keyword, default arguments.",
+      "What are *args and **kwargs in Python?"
+    ],
+    "responses": [
+      "Python supports several types of arguments:\n\n- **Positional**: passed in order.\n- **Keyword**: passed with name=value.\n- **Default**: has a fallback value.\n- **`*args`**: variable number of positional args.\n- **`**kwargs`**: variable number of keyword args.\n\nExample:\n```python\ndef show(a, b=2, *args, **kwargs):\n    print(a, b, args, kwargs)\n\nshow(1, 3, 4, 5, x=10, y=20)\n# Output: 1 3 (4, 5) {'x': 10, 'y': 20}\n```"
+    ]
+  },
+  {
+    "tag": "lambda_functions",
+    "patterns": [
+      "What are lambda functions in Python?",
+      "How to use anonymous functions in Python?",
+      "Give examples of lambda functions."
+    ],
+    "responses": [
+      "Lambda functions are small, anonymous functions:\n```python\nadd = lambda x, y: x + y\nprint(add(3, 4))  # Output: 7\n```"
+    ]
+  },
+  {
+    "tag": "map_filter_reduce_zip",
+    "patterns": [
+      "What is map in Python?",
+      "How to use filter in Python?",
+      "What is reduce in Python?",
+      "Explain zip function with example."
+    ],
+    "responses": [
+      "**map()** applies a function to all items:\n```python\nnums = [1, 2, 3]\nsquares = list(map(lambda x: x**2, nums))\n```\n\n**filter()** selects items based on condition:\n```python\neven = list(filter(lambda x: x % 2 == 0, nums))\n```\n\n**reduce()** performs cumulative operation (requires functools):\n```python\nfrom functools import reduce\nsum_all = reduce(lambda x, y: x + y, nums)\n```\n\n**zip()** pairs elements from multiple iterables:\n```python\nnames = ['a', 'b']\nages = [1, 2]\nprint(list(zip(names, ages)))  # [('a', 1), ('b', 2)]\n```"
+    ]
+  },
+  {
+    "tag": "recursion",
+    "patterns": [
+      "What is recursion in Python?",
+      "Explain recursion with an example.",
+      "How does recursive function work?"
+    ],
+    "responses": [
+      "Recursion is when a function calls itself to solve smaller subproblems:\n```python\ndef factorial(n):\n    if n == 0:\n        return 1\n    return n * factorial(n-1)\n\nprint(factorial(5))  # Output: 120\n```"
+    ]
+  },
+  {
+    "tag": "classes_objects",
+    "patterns": [
+      "What are classes and objects in Python?",
+      "How to create a class in Python?",
+      "Explain objects in OOP Python."
+    ],
+    "responses": [
+      "In Python, a class is a blueprint for creating objects. An object is an instance of a class.\n```python\nclass Dog:\n    def __init__(self, name):\n        self.name = name\n\nmy_dog = Dog(\"Buddy\")\nprint(my_dog.name)  # Output: Buddy\n```"
+    ]
+  },
+  {
+    "tag": "__init__",
+    "patterns": [
+      "What is the __init__ method in Python?",
+      "Explain the constructor in Python.",
+      "How does __init__ work in a class?"
+    ],
+    "responses": [
+      "`__init__` is the constructor method called when an object is created. It initializes the object’s attributes.\n```python\nclass Person:\n    def __init__(self, name, age):\n        self.name = name\n        self.age = age\n\np = Person(\"Alice\", 25)\n```"
+    ]
+  },
+  {
+    "tag": "instance_vs_class_variables",
+    "patterns": [
+      "What is the difference between instance and class variables?",
+      "Explain class variable vs instance variable with example.",
+      "How are instance variables different from class variables in Python?"
+    ],
+    "responses": [
+      "- **Instance variables** are unique to each object.\n- **Class variables** are shared across all instances.\n```python\nclass Car:\n    wheels = 4  # Class variable\n    def __init__(self, brand):\n        self.brand = brand  # Instance variable\n\nc1 = Car(\"Toyota\")\nc2 = Car(\"Honda\")\n```"
+    ]
+  },
+  {
+    "tag": "inheritance_polymorphism",
+    "patterns": [
+      "What is inheritance in Python OOP?",
+      "Explain polymorphism in Python with example.",
+      "How does inheritance work in Python?"
+    ],
+    "responses": [
+      "**Inheritance** allows a class to use methods from another class.\n**Polymorphism** allows using methods that behave differently based on the object.\n```python\nclass Animal:\n    def speak(self):\n        return \"Some sound\"\n\nclass Dog(Animal):\n    def speak(self):\n        return \"Bark\"\n\nclass Cat(Animal):\n    def speak(self):\n        return \"Meow\"\n\nanimals = [Dog(), Cat()]\nfor a in animals:\n    print(a.speak())  # Output: Bark, Meow\n```"
+    ]
+  },
+  {
+    "tag": "encapsulation",
+    "patterns": [
+      "What is encapsulation in Python?",
+      "Explain data hiding in Python OOP.",
+      "How do you protect data in Python classes?"
+    ],
+    "responses": [
+      "Encapsulation restricts direct access to some of an object's components.\nPrivate members can be defined with an underscore:\n```python\nclass BankAccount:\n    def __init__(self, balance):\n        self.__balance = balance  # private\n\n    def get_balance(self):\n        return self.__balance\n```"
+    ]
+  },
+  {
+    "tag": "magic_methods",
+    "patterns": [
+      "What are magic methods in Python?",
+      "Explain __str__ and __repr__ in Python.",
+      "What is __len__ used for in Python?"
+    ],
+    "responses": [
+      "Magic methods (or dunder methods) are special methods with double underscores:\n- `__str__`: for readable string\n- `__repr__`: for unambiguous string\n- `__len__`: returns length\n```python\nclass Book:\n    def __init__(self, title):\n        self.title = title\n    def __str__(self):\n        return f\"Book: {self.title}\"\n    def __len__(self):\n        return len(self.title)\n```"
+    ]
+  },
+  {
+    "tag": "staticmethod_vs_classmethod",
+    "patterns": [
+      "What is the difference between @staticmethod and @classmethod?",
+      "When to use staticmethod vs classmethod?",
+      "Explain static and class methods with example."
+    ],
+    "responses": [
+      "- `@staticmethod`: Doesn’t access class or instance.\n- `@classmethod`: Accesses the class (cls).\n```python\nclass Demo:\n    @staticmethod\n    def greet():\n        print(\"Hello\")\n\n    @classmethod\n    def describe(cls):\n        print(f\"This is class {cls.__name__}\")\n```"
+    ]
+  },
+  {
+    "tag": "try_except_finally",
+    "patterns": [
+      "How does error handling work in Python?",
+      "Explain try, except, finally in Python.",
+      "What is the purpose of finally block in error handling?"
+    ],
+    "responses": [
+      "`try-except-finally` is used to handle exceptions:\n- `try`: contains code that might throw an error\n- `except`: handles the error\n- `finally`: runs no matter what\n```python\ntry:\n    x = 1 / 0\nexcept ZeroDivisionError:\n    print(\"Cannot divide by zero\")\nfinally:\n    print(\"This block always runs\")\n```"
+    ]
+  },
+  {
+    "tag": "multiple_exceptions",
+    "patterns": [
+      "How to handle multiple exception types in Python?",
+      "Can we catch different errors with different except blocks?",
+      "Explain handling multiple exceptions."
+    ],
+    "responses": [
+      "Yes, you can use multiple `except` blocks to handle different exceptions:\n```python\ntry:\n    num = int(input(\"Enter a number: \"))\n    result = 10 / num\nexcept ValueError:\n    print(\"Invalid input\")\nexcept ZeroDivisionError:\n    print(\"Division by zero is not allowed\")\n```"
+    ]
+  },
+  {
+    "tag": "custom_exceptions",
+    "patterns": [
+      "What are custom exceptions in Python?",
+      "How do you create your own exception?",
+      "Explain user-defined exceptions with example."
+    ],
+    "responses": [
+      "Custom exceptions help define specific error types in your program. You create one by inheriting from `Exception`:\n```python\nclass MyError(Exception):\n    def __init__(self, message):\n        self.message = message\n        super().__init__(self.message)\n\nraise MyError(\"Something went wrong\")\n```"
+    ]
+  },
+  {
+    "tag": "file_open_read_write",
+    "patterns": [
+      "How do you open and read a file in Python?",
+      "How can I write to a file using Python?",
+      "Explain file reading and writing operations."
+    ],
+    "responses": [
+      "To open, read, and write files in Python, use the `open()` function:\n```python\n# Writing to a file\nwith open(\"example.txt\", \"w\") as f:\n    f.write(\"Hello, world!\")\n\n# Reading from a file\nwith open(\"example.txt\", \"r\") as f:\n    content = f.read()\n    print(content)\n```\nThe `with` statement ensures the file is closed after use."
+    ]
+  },
+  {
+    "tag": "file_modes",
+    "patterns": [
+      "What are different file modes in Python?",
+      "Explain file opening modes like 'r', 'w', 'a', etc.",
+      "What does 'rb' and 'wb' mean in file handling?"
+    ],
+    "responses": [
+      "Python file modes:\n- `'r'`: read (default)\n- `'w'`: write (creates new or overwrites)\n- `'a'`: append\n- `'b'`: binary\n- `'+'`: read and write\nExamples:\n- `'rb'`: read binary\n- `'w+'`: write and read\n```python\nopen('file.txt', 'r')     # Read text\nopen('file.txt', 'wb')    # Write binary\n```"
+    ]
+  },
+  {
+    "tag": "file_methods",
+    "patterns": [
+      "What are the different methods to read a file in Python?",
+      "How to read line by line from a file?",
+      "Explain read(), readline(), and readlines() methods."
+    ],
+    "responses": [
+      "Python provides several methods to read from a file:\n- `read()`: reads the entire content\n- `readline()`: reads a single line\n- `readlines()`: reads all lines into a list\n```python\nwith open(\"example.txt\", \"r\") as f:\n    print(f.read())          # Entire file\n    print(f.readline())      # First line\n    print(f.readlines())     # List of lines\n```"
+    ]
+  },
+  {
+    "tag": "file_close_context_manager",
+    "patterns": [
+      "Why should we close a file in Python?",
+      "What is the benefit of using with statement?",
+      "How does context manager help in file handling?"
+    ],
+    "responses": [
+      "Files should be closed to free system resources. Using a context manager (`with` statement) is best practice:\n- It ensures the file is automatically closed after its suite finishes.\n```python\nwith open(\"data.txt\", \"r\") as file:\n    data = file.read()\n```\nThis avoids needing `file.close()` manually."
+    ]
+  },
+  {
+    "tag": "modules_import",
+    "patterns": [
+      "What is a module in Python?",
+      "How to import a module in Python?",
+      "Explain how modules work in Python"
+    ],
+    "responses": [
+      "A **module** in Python is a file containing Python code (functions, variables, classes). You can use `import` to bring a module into another script.\n\nExamples:\n```python\nimport math\nprint(math.sqrt(25))\n\nfrom math import pi\nprint(pi)\n```\nModules help in organizing and reusing code."
+    ]
+  },
+  {
+    "tag": "builtin_modules",
+    "patterns": [
+      "What are built-in modules in Python?",
+      "Give examples of standard Python modules",
+      "Name some commonly used built-in modules"
+    ],
+    "responses": [
+      "Python includes many built-in modules like:\n- `math`: mathematical functions\n- `datetime`: work with dates/times\n- `os`: interact with the operating system\n- `sys`: system-specific parameters\n- `random`: generate random numbers\n\nExample:\n```python\nimport datetime\nprint(datetime.datetime.now())\n```"
+    ]
+  },
+  {
+    "tag": "creating_custom_modules",
+    "patterns": [
+      "How do you create a custom module?",
+      "Explain how to write your own module in Python",
+      "Can I make a custom Python module?"
+    ],
+    "responses": [
+      "Yes! Create a `.py` file with your functions, then import it in another script.\n\nExample:\n```python\n# mymodule.py\ndef greet(name):\n    return f\"Hello, {name}!\"\n```\nThen in another file:\n```python\nimport mymodule\nprint(mymodule.greet(\"Yash\"))\n```"
+    ]
+  },
+  {
+    "tag": "packages_init",
+    "patterns": [
+      "What is a package in Python?",
+      "Explain Python packages and how they work",
+      "How is a package different from a module?"
+    ],
+    "responses": [
+      "A **package** is a directory with a collection of Python modules. It must contain an `__init__.py` file to be treated as a package (in older versions of Python).\n\nStructure:\n```\nmypackage/\n│\n├── __init__.py\n├── module1.py\n└── module2.py\n```\nThen use:\n```python\nfrom mypackage import module1\n```"
+    ]
+  },
+  {
+    "tag": "import_alias",
+    "patterns": [
+      "How to import modules with alias?",
+      "Can I rename modules while importing?",
+      "What is the use of 'as' keyword in imports?"
+    ],
+    "responses": [
+      "Yes, you can use `as` to import a module with an alias.\n\nExample:\n```python\nimport numpy as np\nprint(np.array([1, 2, 3]))\n```\nThis makes your code shorter and more readable, especially with long module names."
+    ]
+  }
+  ,
+  {
+    "tag": "iterators_generators",
+    "patterns": [
+      "What are iterators in Python?",
+      "Explain generators and yield",
+      "How does yield work in Python?"
+    ],
+    "responses": [
+      "**Iterators** are objects which allow you to traverse through all the elements in a collection. They implement `__iter__()` and `__next__()` methods.\n\n**Generators** simplify creating iterators. They use `yield` to return values one at a time.\n\nExample:\n```python\ndef count_up_to(n):\n    count = 1\n    while count <= n:\n        yield count\n        count += 1\n```"
+    ]
+  },
+  {
+    "tag": "decorators",
+    "patterns": [
+      "What is a decorator in Python?",
+      "How do decorators work?",
+      "Explain Python decorators with example"
+    ],
+    "responses": [
+      "**Decorators** are functions that modify the behavior of another function.\n\nExample:\n```python\ndef decorator_func(func):\n    def wrapper():\n        print(\"Before function call\")\n        func()\n        print(\"After function call\")\n    return wrapper\n\n@decorator_func\ndef say_hello():\n    print(\"Hello!\")\n\nsay_hello()\n```"
+    ]
+  },
+  {
+    "tag": "closures",
+    "patterns": [
+      "What are closures in Python?",
+      "Explain the concept of closure",
+      "How does closure work in Python?"
+    ],
+    "responses": [
+      "**Closures** are functions defined inside another function that remember the values from the enclosing scope even if that scope is finished.\n\nExample:\n```python\ndef outer(x):\n    def inner():\n        print(x)\n    return inner\n\nclosure_func = outer(10)\nclosure_func()  # prints 10\n```"
+    ]
+  },
+  {
+    "tag": "list_vs_generator_comprehension",
+    "patterns": [
+      "Difference between list comprehension and generator comprehension?",
+      "What is generator comprehension?",
+      "Explain list vs generator comprehension"
+    ],
+    "responses": [
+      "**List Comprehension** creates the full list in memory:\n```python\nsquares = [x*x for x in range(5)]\n```\n\n**Generator Comprehension** uses `()` and yields items one at a time:\n```python\ngen = (x*x for x in range(5))\n```\n\nGenerators are more memory efficient."
+    ]
+  },
+  {
+    "tag": "multithreading_vs_multiprocessing",
+    "patterns": [
+      "What is the difference between multithreading and multiprocessing?",
+      "Explain multithreading vs multiprocessing",
+      "When to use multithreading and multiprocessing?"
+    ],
+    "responses": [
+      "**Multithreading**: Runs multiple threads in a single process. Good for I/O-bound tasks.\n\n**Multiprocessing**: Runs on multiple cores. Best for CPU-bound tasks.\n\nExample:\n- Multithreading: Downloading files, web scraping\n- Multiprocessing: Image processing, data crunching"
+    ]
+  },
+  {
+    "tag": "memory_management_del",
+    "patterns": [
+      "How does Python handle memory management?",
+      "What is the use of del keyword?",
+      "Explain garbage collection in Python"
+    ],
+    "responses": [
+      "Python has automatic **memory management** using reference counting and a cyclic garbage collector.\n\nThe `del` keyword is used to delete objects or variables:\n```python\nx = 10\ndel x\n```\n\nObjects with zero references are cleaned up automatically to free memory."
+    ]
+  }
+  ,
+  {
+    "tag": "enumerate_any_all_sorted_reversed",
+    "patterns": [
+      "What is the purpose of enumerate in Python?",
+      "How does the any function work in Python?",
+      "Explain the all function in Python",
+      "What does sorted do in Python?",
+      "How does reversed work in Python?"
+    ],
+    "responses": [
+      "**`enumerate`**: Adds a counter to an iterable and returns an enumerate object. Useful for tracking index.\nExample:\n```python\nfor index, value in enumerate(['a', 'b', 'c']):\n    print(index, value)\n```\n\n**`any`**: Returns True if any element in the iterable is true.\n**`all`**: Returns True if all elements are true.\n**`sorted`**: Returns a new sorted list from an iterable.\n**`reversed`**: Returns an iterator that accesses elements in reverse order."
+    ]
+  },
+  {
+    "tag": "unpacking",
+    "patterns": [
+      "What is unpacking in Python?",
+      "Explain tuple unpacking in Python",
+      "How does unpacking work in Python?"
+    ],
+    "responses": [
+      "**Unpacking**: The ability to assign elements of an iterable to multiple variables in a single statement.\nExample:\n```python\ntuple1 = (1, 2)\na, b = tuple1\nprint(a, b)\n```"
+    ]
+  },
+  {
+    "tag": "walrus_operator",
+    "patterns": [
+      "What is the walrus operator (:=) in Python?",
+      "How does the walrus operator work?",
+      "When to use the walrus operator?"
+    ],
+    "responses": [
+      "**Walrus Operator (:=)**: The walrus operator allows assignment within expressions.\nExample:\n```python\nif (n := len(my_list)) > 5:\n    print(f'List is too long with {n} elements')\n```"
+    ]
+  },
+  {
+    "tag": "f_strings",
+    "patterns": [
+      "What are f-strings in Python?",
+      "How do you use f-strings for formatting in Python?",
+      "Explain f-strings in Python"
+    ],
+    "responses": [
+      "**F-strings**: A way to format strings in Python. They are prefixed with `f` and allow expressions inside curly braces `{}`.\nExample:\n```python\nname = 'John'\nprint(f'Hello, {name}!')\n```"
+    ]
+  },
+  {
+    "tag": "type_hints",
+    "patterns": [
+      "What are type hints in Python?",
+      "Explain PEP 484 and type hints in Python",
+      "How do type hints help in Python?"
+    ],
+    "responses": [
+      "**Type Hints (PEP 484)**: Type hints allow you to specify the expected data types of function arguments and return values.\nExample:\n```python\ndef add(x: int, y: int) -> int:\n    return x + y\n```"
+    ]
+  },
+  {
+    "tag": "numpy_pandas",
+    "patterns": [
+      "What is NumPy used for?",
+      "What is Pandas in Python?",
+      "How do NumPy and Pandas differ?",
+      "How do I use NumPy for data manipulation?",
+      "How do I use Pandas for data analysis?"
+    ],
+    "responses": [
+      "**NumPy**: A library for numerical computing in Python, providing support for large multi-dimensional arrays and matrices, along with a collection of mathematical functions to operate on these arrays.\n\n**Pandas**: A powerful library for data manipulation and analysis, providing data structures like Series and DataFrame, perfect for handling and analyzing structured data.\n\nExample (NumPy):\n```python\nimport numpy as np\narr = np.array([1, 2, 3])\n```\n\nExample (Pandas):\n```python\nimport pandas as pd\ndf = pd.DataFrame({'A': [1, 2], 'B': [3, 4]})\n```\n\n**Difference**: NumPy focuses on numerical operations and Pandas on structured data analysis."
+    ]
+  },
+  {
+    "tag": "flask_django",
+    "patterns": [
+      "What is Flask in Python?",
+      "What is Django used for?",
+      "Flask vs Django, which one should I use?",
+      "When to use Flask and when to use Django?"
+    ],
+    "responses": [
+      "**Flask**: A lightweight web framework for Python that allows you to build web applications quickly. It is minimal and flexible.\nExample:\n```python\nfrom flask import Flask\napp = Flask(__name__)\n@app.route('/')\ndef home():\n    return 'Hello, World!'\nif __name__ == '__main__':\n    app.run()\n```\n\n**Django**: A high-level web framework for Python that provides a lot of built-in features for building complex web applications. It includes authentication, database integration, and more.\nExample:\n```python\nfrom django.http import HttpResponse\nfrom django.shortcuts import render\n\ndef home(request):\n    return HttpResponse('Hello, World!')\n```\n\n**Flask vs Django**: Use Flask for small and simple apps, Django for large applications requiring built-in features."
+    ]
+  },
+  {
+    "tag": "requests_beautifulsoup",
+    "patterns": [
+      "How do I make HTTP requests in Python?",
+      "What is BeautifulSoup in Python?",
+      "How do I scrape a website using BeautifulSoup?",
+      "How do I use Requests for API calls?"
+    ],
+    "responses": [
+      "**Requests**: A simple HTTP library for Python, used to send HTTP requests to a specified URL.\nExample:\n```python\nimport requests\nresponse = requests.get('https://example.com')\nprint(response.text)\n```\n\n**BeautifulSoup**: A library for web scraping purposes to parse HTML and XML documents. It helps extract data from web pages.\nExample:\n```python\nfrom bs4 import BeautifulSoup\nhtml = '<html><body><h1>Title</h1></body></html>'\nsoup = BeautifulSoup(html, 'html.parser')\nprint(soup.h1.string)\n```\n\nYou can use both together to scrape data from websites using requests to fetch the page and BeautifulSoup to parse it."
+    ]
+  },
+  {
+    "tag": "pytest",
+    "patterns": [
+      "What is Pytest in Python?",
+      "How do I use Pytest for testing?",
+      "How do I write unit tests with Pytest?"
+    ],
+    "responses": [
+      "**Pytest**: A testing framework for Python that makes it easy to write simple and scalable test cases. It supports fixtures, parameterized tests, and more.\nExample:\n```python\n# test_example.py\ndef test_addition():\n    assert 1 + 1 == 2\n```\n\nRun tests using the command:\n```bash\npytest test_example.py\n```"
+    ]
+  },
+  {
+    "tag": "sqlalchemy",
+    "patterns": [
+      "What is SQLAlchemy in Python?",
+      "How do I use SQLAlchemy for ORM?",
+      "Explain SQLAlchemy and how it works with databases?"
+    ],
+    "responses": [
+      "**SQLAlchemy**: A SQL toolkit and Object-Relational Mapping (ORM) library for Python. It allows you to map database tables to Python classes and provides methods to interact with the database.\nExample:\n```python\nfrom sqlalchemy import create_engine, Column, Integer, String\nfrom sqlalchemy.ext.declarative import declarative_base\nfrom sqlalchemy.orm import sessionmaker\n\nBase = declarative_base()\nclass User(Base):\n    __tablename__ = 'users'\n    id = Column(Integer, primary_key=True)\n    name = Column(String)\n\nengine = create_engine('sqlite:///:memory:')\nBase.metadata.create_all(engine)\nSession = sessionmaker(bind=engine)\nsession = Session()\n```\n\nSQLAlchemy makes database interactions more Pythonic and less error-prone."
+    ]
+  },
+  {
+    "tag": "time_space_complexity",
+    "patterns": [
+      "What is time complexity of Python data structures?",
+      "What is space complexity of Python data structures?",
+      "How do you analyze time and space complexity in Python?"
+    ],
+    "responses": [
+      "The **time complexity** and **space complexity** of Python data structures vary depending on the operation being performed.\n\nFor example:\n\n- **List**: Access: O(1), Insert/Remove at end: O(1), Insert/Remove at beginning/middle: O(n), Search: O(n)\n- **Tuple**: Access: O(1), Search: O(n), Creation: O(n)\n- **Set**: Insert/Search/Delete: O(1) on average, O(n) worst case\n- **Dictionary**: Insert/Search/Delete: O(1) on average, O(n) worst case\n\nTo analyze time and space complexity, consider how the number of operations grows as the size of the data increases."
+    ]
+  },
+  {
+    "tag": "list_vs_tuple",
+    "patterns": [
+      "What is the difference between list and tuple?",
+      "How are lists and tuples different in Python?",
+      "When should I use a tuple instead of a list?"
+    ],
+    "responses": [
+      "The primary difference between **list** and **tuple** is that lists are **mutable** (can be modified after creation) and tuples are **immutable** (cannot be modified after creation).\n\n- **List**: Defined with square brackets `[]`, supports item assignment, appending, removal, and more.\n- **Tuple**: Defined with parentheses `()`, supports access and iteration, but no modification operations.\n\nUse tuples when you need a collection of items that should not be modified, which can also be used as keys in dictionaries."
+    ]
+  },
+  {
+    "tag": "is_vs_equals",
+    "patterns": [
+      "What is the difference between `is` and `==`?",
+      "When should I use `is` and `==` in Python?",
+      "What do `is` and `==` mean in Python?"
+    ],
+    "responses": [
+      "`==` compares the **values** of two objects to see if they are equal, while `is` compares the **identity** (memory location) of two objects.\n\nExample:\n```python\nx = [1, 2, 3]\ny = [1, 2, 3]\nprint(x == y)  # True\nprint(x is y)  # False\n```\n\nIn this example, `x == y` returns `True` because the lists have the same values, but `x is y` returns `False` because they are stored in different memory locations."
+    ]
+  },
+  {
+    "tag": "copy_vs_shallow_copy",
+    "patterns": [
+      "What is the difference between deep copy and shallow copy?",
+      "How does shallow copy work in Python?",
+      "What is a deep copy in Python?"
+    ],
+    "responses": [
+      "A **shallow copy** copies the reference to the original object (it does not create independent copies of nested objects), while a **deep copy** creates an entirely independent copy, including nested objects.\n\nExample:\n```python\nimport copy\nlist1 = [1, [2, 3]]\nshallow = copy.copy(list1)\ndeep = copy.deepcopy(list1)\nlist1[1][0] = 99\nprint(shallow)  # [[1, 99]]\nprint(deep)  # [[2, 3]]\n```\n\nIn the shallow copy, changes to nested objects affect both the original and copied lists, whereas in the deep copy, the nested objects are independent."
+    ]
+  },
+  {
+    "tag": "mutable_immutable",
+    "patterns": [
+      "What is the difference between mutable and immutable in Python?",
+      "What are mutable and immutable types in Python?",
+      "Can you give examples of mutable and immutable objects?"
+    ],
+    "responses": [
+      "**Mutable objects** can be changed after creation, while **immutable objects** cannot be changed once created.\n\n**Mutable objects**: Lists, Dictionaries, Sets\n**Immutable objects**: Integers, Strings, Tuples\n\nExample:\n```python\n# Mutable object\nlst = [1, 2, 3]\nlst[0] = 99\nprint(lst)  # [99, 2, 3]\n\n# Immutable object\ns = 'hello'\ns[0] = 'H'  # TypeError: 'str' object does not support item assignment\n```\nImmutable objects are useful in situations where you want to ensure that the data doesn't change."
+    ]
+  },
+  {
+    "tag": "scope",
+    "patterns": [
+      "What is the difference between global and local scope?",
+      "What do global and local variables mean?",
+      "How do Python variables work in global and local scope?"
+    ],
+    "responses": [
+      "In Python, **global scope** refers to variables that are accessible throughout the entire program, while **local scope** refers to variables that are only accessible within the function or block where they are defined.\n\nExample:\n```python\nx = 10  # Global variable\n\ndef my_function():\n    y = 5  # Local variable\n    print(x, y)\nmy_function()  # x and y are accessible here\nprint(x)  # x is accessible here\n# print(y)  # Error: 'y' is not defined outside the function\n```\nThe `global` keyword can be used to modify global variables from within a function."
+    ]
+  },
+  {
+    "tag": "gil",
+    "patterns": [
+      "What is the Global Interpreter Lock (GIL) in Python?",
+      "How does the GIL affect multi-threading in Python?",
+      "Can Python achieve true multithreading with the GIL?"
+    ],
+    "responses": [
+      "The **Global Interpreter Lock (GIL)** is a mechanism that prevents multiple native threads from executing Python bytecodes at once in CPython, the default Python implementation. This means that even on multi-core processors, only one thread can execute Python code at a time.\n\nWhile this limits multi-threading performance in CPU-bound tasks, it doesn't affect I/O-bound tasks, which can still benefit from multi-threading in Python. For CPU-bound tasks, multi-processing (using multiple processes) can be more efficient."
+    ]
+  }
+]  
+}
