@@ -33,26 +33,26 @@ JSON-based QA Dataset
 📦 Folder Structure
 AI_ChatBot/
 │
-├── app.py                    # 🔁 Main Flask application (routes, logic flow)
+├── app.py
 │
-├── chatbot/                  # 🧠 Core logic and modular features
-│   ├── core.py               # Chatbot response logic (local, Romaji, fallback)
-│   ├── image_text.py         # OCR from images using Tesseract
-│   ├── web_search.py         # Web search integration (DuckDuckGo fallback)
-│   └── utils.py              # Utility functions (cleaning, formatting, etc.)
+├── chatbot/
+│   ├── core.py
+│   ├── image_text.py
+│   ├── web_search.py
+│   └── utils.py
 │
-├── static/                   # 🎨 Frontend static files
-│   ├── style.css             # Custom styling for the chatbot UI
-│   └── script.js             # Screen share, audio capture, transcription
+├── static/
+│   ├── style.css
+│   └── script.js
 │
-├── templates/                # 🖼️ HTML templates
-│   └── index.html            # Main chat interface
+├── templates/
+│   └── index.html
 │
-├── technical.json            # 📘 Dataset: Technical interview Q&A
-├── hr.json                   # 📕 Dataset: HR interview Q&A
+├── technical.json
+├── hr.json
 │
-├── requirements.txt          # 📦 Python dependencies (Flask, Vosk, etc.)
-└── README.md                 # 🧾 Project overview and setup instructions ✅
+├── requirements.txt
+└── README.md
 
 
 🔧 Installation
