@@ -175,6 +175,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 *For Japanese-translated README or additional documentation, please feel free to reach out!*
-
-![Screenshot 2025-05-17 110805](https://github.com/user-attachments/assets/fbacd7ee-da4c-4223-a138-42806c634e6d)
-![Screenshot 2025-05-17 110824](https://github.com/user-attachments/assets/b9065008-d1b7-4ffc-8a7b-620fdaf0b860)
